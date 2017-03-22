@@ -143,7 +143,7 @@ class Stock_Model(object):
             X_train,
             y_train,
             batch_size=100,
-            nb_epoch=1,
+            nb_epoch=100,
             validation_split=0.05)
 
         trainScore = model.evaluate(X_train, y_train, verbose=0)
